@@ -72,12 +72,15 @@ NSString *TERenditionHashPBType = @"com.alexzielenski.themeengine.rendition.hash
         
     } else if (IS(kUTTypePNG)) {
         [self.previewImage lockFocus];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
         NSBitmapImageRep *snapshot = [[NSBitmapImageRep alloc] initWithFocusedViewRect:NSMakeRect(0, 0,
                                                                                                   self.previewImage.size.width,
                                                                                                   self.previewImage.size.height)];
+#pragma clang diagnostic pop
         [self.previewImage unlockFocus];
         
-        return [snapshot representationUsingType:NSPNGFileType properties:@{}];
+        return [snapshot representationUsingType:NSBitmapImageFileTypePNG properties:@{}];
         
     } else if (IS(kUTTypeTIFF) || IS(kUTTypeImage)) {
         return [self.previewImage TIFFRepresentationUsingCompression:NSTIFFCompressionLZW factor:1.0];

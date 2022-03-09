@@ -7,7 +7,8 @@
 //
 
 #import <ThemeKit/TKRendition.h>
-#import "TKEffectPreset.h"
+
+@class TKEffectPreset;
 
 @interface TKEffectRendition : TKRendition
 @property (nonatomic, strong) TKEffectPreset *effectPreset;

@@ -76,4 +76,8 @@
     }
 }
 
+- (BOOL)caAllowSubimageOfImage:(CGImageRef)image {
+    return YES;
+}
+
 @end

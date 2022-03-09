@@ -55,6 +55,8 @@
     static NSDictionary *collectionProperties = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
         collectionProperties = @{ @"effectPreset.effects": @[ @"Effects", @(TKCollectionTypeArray), @{
                                                                   TKKey(colorValue): @"Change Effect Color",
                                                                   TKKey(color2Value): @"Change Effect Color 2",
@@ -67,6 +69,7 @@
                                                                   TKKey(spreadValue): @"Change Effect Spread"
                                                                   }],
                                   };
+#pragma clang diagnostic pop
     });
     return collectionProperties;
 }

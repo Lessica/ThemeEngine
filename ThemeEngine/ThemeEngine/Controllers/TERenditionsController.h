@@ -12,7 +12,12 @@
 
 @interface TERenditionsController : NSViewController
 @property (weak) IBOutlet NSArrayController *renditionsArrayController;
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @property (weak) IBOutlet IKImageBrowserView *renditionBrowser;
+#pragma clang diagnostic pop
+
 @property (weak) IBOutlet NSSlider *zoomSlider;
 @property (weak) IBOutlet TEInspectorController *inspectorController;
 @property (nonatomic, assign) NSInteger currentGroup;

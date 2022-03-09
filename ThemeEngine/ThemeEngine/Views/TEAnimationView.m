@@ -15,7 +15,7 @@
 @property (assign) NSUInteger sampleIndex;
 @end
 
-@interface TESpriteLayer ()
+@interface TESpriteLayer () <CALayerDelegate>
 - (NSUInteger)currentSampleIndex;
 @end
 
@@ -53,7 +53,7 @@
 
 @end
 
-@interface TEAnimationView ()
+@interface TEAnimationView () <CALayerDelegate>
 @property (weak) TESpriteLayer *spriteLayer;
 - (void)_initialize;
 - (void)_invalidateAnimation;

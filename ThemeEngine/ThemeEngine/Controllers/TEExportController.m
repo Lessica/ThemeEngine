@@ -115,10 +115,10 @@
         NSAppleScript *script      = [[NSAppleScript alloc] initWithSource:scriptText];
         
         NSURL *dst    = [[tmpURL URLByAppendingPathComponent:[[NSUUID UUID] UUIDString]] URLByAppendingPathExtension:@"tiff"];
-        //!TODO Do something with the rtn error
-        NSString *rtn = [script executeFunction:TEAppleScriptExportFunctionName
-                                  withArguments:@[ dst.path ]
-                                          error:nil];
+        /// TODO: Do something with the rtn error
+//        NSString *rtn = [script executeFunction:TEAppleScriptExportFunctionName
+//                                  withArguments:@[ dst.path ]
+//                                          error:nil];
         
         NSString *documentName = [script executeFunction:TEAppleScriptGetFileFunctionName
                                            withArguments:nil
@@ -149,7 +149,7 @@
                 }
                 
                 NSBitmapImageRep *image = [[NSBitmapImageRep alloc] initWithCGImage:slice];
-                [[image representationUsingType:NSPNGFileType properties:@{}] writeToFile:[@"/Users/Alex/Desktop/slices" stringByAppendingFormat:@"/%ld.png", (long)i] atomically:NO];
+                [[image representationUsingType:NSBitmapImageFileTypePNG properties:@{}] writeToFile:[@"/Users/Alex/Desktop/slices" stringByAppendingFormat:@"/%ld.png", (long)i] atomically:NO];
                 [rend setValue:image forKey:@"image"];
                 CGImageRelease(slice);
             }
@@ -247,7 +247,7 @@
         // Enumerate in reverse order
         [rep drawInRect:bounds
                fromRect:NSZeroRect
-              operation:NSCompositeSourceOver
+              operation:NSCompositingOperationSourceOver
                fraction:1.0
          respectFlipped:NO
                   hints:nil];

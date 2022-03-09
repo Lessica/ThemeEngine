@@ -170,7 +170,7 @@ static const void *PREVIEWIMAGECHANGED = &PREVIEWIMAGECHANGED;
         NSURL *selectedURL = panel.URL;
         
         NSData *caarData = [NSData dataWithContentsOfURL:selectedURL];
-        NSDictionary *unarchived = [NSKeyedUnarchiver unarchiveObjectWithData:caarData];
+        NSDictionary *unarchived = [NSKeyedUnarchiver unarchivedObjectOfClass:[NSDictionary class] fromData:caarData error:nil];
         
         if ([unarchived isKindOfClass:[NSDictionary class]]) {
             if ([[unarchived objectForKey:@"rootLayer"] isKindOfClass:[CALayer class]]) {
@@ -347,6 +347,8 @@ static NSString *sanitizeToken(NSString *token) {
 
 #pragma mark - IKImageBrowserViewDataSource
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (NSUInteger)numberOfGroupsInImageBrowser:(IKImageBrowserView *)aBrowser {
     return self.groups.count;
 }
@@ -354,5 +356,6 @@ static NSString *sanitizeToken(NSString *token) {
 - (NSDictionary *)imageBrowser:(IKImageBrowserView *)aBrowser groupAtIndex:(NSUInteger)index {
     return self.groups[index];
 }
+#pragma clang diagnostic pop
 
 @end

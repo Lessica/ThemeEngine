@@ -8,6 +8,8 @@
 
 #import "TEEffectsInspector.h"
 #import <ThemeKit/TKEffectRendition.h>
+#import <ThemeKit/TKEffect.h>
+#import <ThemeKit/TKEffectPreset.h>
 
 @implementation TEEffectItem
 @end

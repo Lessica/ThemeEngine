@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7DF54D64F4548529C356088 /* Pods_ThemeEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31BC7CDE9D90F877D950E82F /* Pods_ThemeEngine.framework */; };
 		FA092CED1B36822D0064DBC4 /* TERenditionsController+Dragging.m in Sources */ = {isa = PBXBuildFile; fileRef = FA092CEC1B36822D0064DBC4 /* TERenditionsController+Dragging.m */; };
 		FA1E9C691B3346A40097AA41 /* TEBitmapInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1E9C681B3346A40097AA41 /* TEBitmapInspector.m */; };
 		FA21F87D1B2E95710094202A /* TKRendition+Filtering.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21F87C1B2E95710094202A /* TKRendition+Filtering.m */; };
@@ -39,8 +40,6 @@
 		FA80CE0F1B30BF36005E5DD2 /* TEGradientStopLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA80CE0E1B30BF36005E5DD2 /* TEGradientStopLayer.m */; };
 		FA81475D1B2D95D100881F36 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA81475C1B2D95D100881F36 /* Quartz.framework */; };
 		FA8313DE1B3B221E003D0F4A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA8313DD1B3B221E003D0F4A /* Credits.rtf */; };
-		FA8313E01B3B2237003D0F4A /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA8313DB1B3B2218003D0F4A /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FA8313E11B3B2251003D0F4A /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8313DB1B3B2218003D0F4A /* Sparkle.framework */; };
 		FA8313E61B3B390A003D0F4A /* TECaarInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8313E51B3B390A003D0F4A /* TECaarInspector.m */; };
 		FAA2B1BE1B2E023900D70473 /* TKRendition+ImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA2B1BD1B2E023900D70473 /* TKRendition+ImageBrowser.m */; };
 		FAA54F691B2E211F00EA15F2 /* RBLScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA54F681B2E211F00EA15F2 /* RBLScrollView.m */; };
@@ -86,7 +85,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FA3A2381214AAF6D00E1A207 /* ThemeKit.framework in Copy Frameworks */,
-				FA8313E01B3B2237003D0F4A /* Sparkle.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +92,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		31BC7CDE9D90F877D950E82F /* Pods_ThemeEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThemeEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8741D184AE8F6BF7EFE0F9F6 /* Pods-ThemeEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThemeEngine.release.xcconfig"; path = "Target Support Files/Pods-ThemeEngine/Pods-ThemeEngine.release.xcconfig"; sourceTree = "<group>"; };
+		F1D7F89F133E6C9844C2B770 /* Pods-ThemeEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThemeEngine.debug.xcconfig"; path = "Target Support Files/Pods-ThemeEngine/Pods-ThemeEngine.debug.xcconfig"; sourceTree = "<group>"; };
 		FA092CEB1B36822D0064DBC4 /* TERenditionsController+Dragging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TERenditionsController+Dragging.h"; path = "Controllers/TERenditionsController+Dragging.h"; sourceTree = "<group>"; };
 		FA092CEC1B36822D0064DBC4 /* TERenditionsController+Dragging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TERenditionsController+Dragging.m"; path = "Controllers/TERenditionsController+Dragging.m"; sourceTree = "<group>"; };
 		FA1E9C671B3346A40097AA41 /* TEBitmapInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEBitmapInspector.h; path = Controllers/Inspectors/TEBitmapInspector.h; sourceTree = "<group>"; };
@@ -152,7 +153,6 @@
 		FA80CE0D1B30BF36005E5DD2 /* TEGradientStopLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TEGradientStopLayer.h; path = Views/TEGradientStopLayer.h; sourceTree = "<group>"; };
 		FA80CE0E1B30BF36005E5DD2 /* TEGradientStopLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TEGradientStopLayer.m; path = Views/TEGradientStopLayer.m; sourceTree = "<group>"; };
 		FA81475C1B2D95D100881F36 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
-		FA8313DB1B3B2218003D0F4A /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		FA8313DD1B3B221E003D0F4A /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Credits.rtf; path = Resources/Credits.rtf; sourceTree = "<group>"; };
 		FA8313E41B3B390A003D0F4A /* TECaarInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TECaarInspector.h; path = Controllers/Inspectors/TECaarInspector.h; sourceTree = "<group>"; };
 		FA8313E51B3B390A003D0F4A /* TECaarInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TECaarInspector.m; path = Controllers/Inspectors/TECaarInspector.m; sourceTree = "<group>"; };
@@ -227,14 +227,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3A2380214AAF6600E1A207 /* ThemeKit.framework in Frameworks */,
-				FA8313E11B3B2251003D0F4A /* Sparkle.framework in Frameworks */,
 				FA81475D1B2D95D100881F36 /* Quartz.framework in Frameworks */,
+				B7DF54D64F4548529C356088 /* Pods_ThemeEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2622B900F1AC8E320BF184DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1D7F89F133E6C9844C2B770 /* Pods-ThemeEngine.debug.xcconfig */,
+				8741D184AE8F6BF7EFE0F9F6 /* Pods-ThemeEngine.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		FA2662811B3F568E00D97439 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				FA3A237F214AAF6600E1A207 /* ThemeKit.framework */,
+				31BC7CDE9D90F877D950E82F /* Pods_ThemeEngine.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -289,6 +300,7 @@
 				FA606C0A1B2C1D2100F24960 /* Products */,
 				FA80CDED1B308AE6005E5DD2 /* OptimizationProfiles */,
 				FA3A237E214AAF6600E1A207 /* Frameworks */,
+				2622B900F1AC8E320BF184DC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -322,7 +334,6 @@
 				FABEAED11B2F714400B02805 /* Inspectors */,
 				FAA54F581B2E0B7800EA15F2 /* Views */,
 				FAA2B1BF1B2E023C00D70473 /* Categories */,
-				FA8313DA1B3B2218003D0F4A /* Frameworks */,
 				FA606C181B2C1D2100F24960 /* Assets.xcassets */,
 				FA606C1D1B2C1D2100F24960 /* Info.plist */,
 				FA606C0F1B2C1D2100F24960 /* Supporting Files */,
@@ -346,14 +357,6 @@
 				FA80CDEE1B308AE6005E5DD2 /* ThemeEngine.profdata */,
 			);
 			path = OptimizationProfiles;
-			sourceTree = "<group>";
-		};
-		FA8313DA1B3B2218003D0F4A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FA8313DB1B3B2218003D0F4A /* Sparkle.framework */,
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		FAA2B1BF1B2E023C00D70473 /* Categories */ = {
@@ -469,10 +472,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA606C201B2C1D2100F24960 /* Build configuration list for PBXNativeTarget "ThemeEngine" */;
 			buildPhases = (
+				45215027EBC9207E27DE82F6 /* [CP] Check Pods Manifest.lock */,
 				FA606C051B2C1D2100F24960 /* Sources */,
 				FA606C061B2C1D2100F24960 /* Frameworks */,
 				FA606C071B2C1D2100F24960 /* Resources */,
 				FA4DCE851B2D9C1700D820FD /* Copy Frameworks */,
+				146DC9490D495D4583570623 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -489,12 +494,11 @@
 		FA606C011B2C1D2000F24960 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = "Alex Zielenski";
 				TargetAttributes = {
 					FA606C081B2C1D2100F24960 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 3GD8ABJ22W;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -536,6 +540,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		146DC9490D495D4583570623 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThemeEngine/Pods-ThemeEngine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThemeEngine/Pods-ThemeEngine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThemeEngine/Pods-ThemeEngine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45215027EBC9207E27DE82F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThemeEngine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA606C051B2C1D2100F24960 /* Sources */ = {
@@ -644,12 +690,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Alexander Zielenski (3GD8ABJ22W)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 105;
@@ -705,6 +752,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -738,6 +786,7 @@
 		};
 		FA606C211B2C1D2100F24960 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D7F89F133E6C9844C2B770 /* Pods-ThemeEngine.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -745,7 +794,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3GD8ABJ22W;
+				DEVELOPMENT_TEAM = GXZ23M5TP2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -759,6 +808,7 @@
 					"@executable_path/../Frameworks",
 				);
 				OTHER_CFLAGS = (
+					"$(inherited)",
 					"-Wno-profile-instr-unprofiled",
 					"-Wno-profile-instr-out-of-date",
 				);
@@ -771,6 +821,7 @@
 		};
 		FA606C221B2C1D2100F24960 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8741D184AE8F6BF7EFE0F9F6 /* Pods-ThemeEngine.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -778,7 +829,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3GD8ABJ22W;
+				DEVELOPMENT_TEAM = GXZ23M5TP2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -792,6 +843,7 @@
 					"@executable_path/../Frameworks",
 				);
 				OTHER_CFLAGS = (
+					"$(inherited)",
 					"-Wno-profile-instr-unprofiled",
 					"-Wno-profile-instr-out-of-date",
 				);

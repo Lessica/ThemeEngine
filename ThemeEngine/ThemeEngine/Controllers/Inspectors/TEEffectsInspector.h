@@ -7,7 +7,8 @@
 //
 
 #import "TEInspectorDetailController.h"
-#import <ThemeKit/TKEffectRendition.h>
+
+@class TKEffect, TKEffectPreset;
 
 @interface TEEffectItem : NSTableCellView
 @property (weak) IBOutlet NSPopUpButton *addButton;

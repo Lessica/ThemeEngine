@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <ThemeKit/TKEffect.h>
+
+@class TKEffect;
 
 @interface TKEffectPreset : NSObject <NSCopying>
 @property CGFloat scaleFactor;

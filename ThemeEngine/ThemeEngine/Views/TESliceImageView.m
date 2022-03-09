@@ -17,7 +17,7 @@ static NSEdgeInsets TEIntegralInsets(NSEdgeInsets insets) {
 
 static const CGFloat sliceSpaceWidth = 2.0;
 
-@interface TESliceImageView ()
+@interface TESliceImageView () <CALayerDelegate>
 @property (strong) CALayer *leftHandle;
 @property (strong) CALayer *topHandle;
 @property (strong) CALayer *bottomHandle;
@@ -355,7 +355,7 @@ static const CGFloat sliceSpaceWidth = 2.0;
                 
                 [image drawInRect:NSMakeRect(currentSliceX, 0, currentWidth, image.pixelsHigh)
                          fromRect:NSMakeRect(currentX, 0, currentWidth, image.pixelsHigh)
-                        operation:NSCompositeSourceOver
+                        operation:NSCompositingOperationSourceOver
                          fraction:1.0
                    respectFlipped:YES
                             hints:nil];
@@ -374,7 +374,7 @@ static const CGFloat sliceSpaceWidth = 2.0;
                 
                 [image drawInRect:NSMakeRect(0, currentSliceY, image.pixelsWide, currentHeight)
                          fromRect:NSMakeRect(0, currentY, image.pixelsWide, currentHeight)
-                        operation:NSCompositeSourceOver
+                        operation:NSCompositingOperationSourceOver
                          fraction:1.0
                    respectFlipped:YES
                             hints:nil];
@@ -399,7 +399,7 @@ static const CGFloat sliceSpaceWidth = 2.0;
                     
                     [image drawInRect:NSMakeRect(currentSliceX, currentSliceY, currentWidth, currentHeight)
                              fromRect:NSMakeRect(currentX, currentY, currentWidth, currentHeight)
-                            operation:NSCompositeSourceOver
+                            operation:NSCompositingOperationSourceOver
                              fraction:1.0
                        respectFlipped:YES
                                 hints:nil];
@@ -416,7 +416,7 @@ static const CGFloat sliceSpaceWidth = 2.0;
         } else {
             [self.image drawInRect:layer.bounds
                           fromRect:NSZeroRect
-                         operation:NSCompositeSourceOver
+                         operation:NSCompositingOperationSourceOver
                           fraction:1.0
                     respectFlipped:YES
                              hints:nil];
@@ -576,7 +576,7 @@ static const CGFloat sliceSpaceWidth = 2.0;
 - (BOOL)validateValue:(inout id  __nullable __autoreleasing * __nonnull)ioValue forKeyPath:(nonnull NSString *)inKeyPath error:(out NSError * __nullable __autoreleasing * __nullable)outError {
     NSLog(@"%@", inKeyPath);
     if ([inKeyPath hasSuffix:@"HandlePosition"]) {
-        CGFloat newValue;
+        CGFloat newValue = 0;
         CGFloat oldValue = ((NSNumber *)*ioValue).doubleValue;
         if ([inKeyPath isEqualToString:@"leftHandlePosition"]) {
             newValue = [self constrainLeftValue:oldValue];
